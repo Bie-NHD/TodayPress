@@ -21,73 +21,76 @@
         </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="navbar nav-left">
-                <div class="container-fluid logo">
-                    <a href="index.html" class="navbar-brand">
-                        <span>Today</span>Press
-                    </a>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="navbar nav-left">
+                    <div class="container-fluid logo">
+                        <a href="index.html" class="navbar-brand">
+                            <span>Today</span>Press
+                        </a>
+                    </div>
+                    
+    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Thời sự
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Chinh Tri</a></li>
+                                <li><a class="dropdown-item" href="#">Dan Sinh</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="#">Lao Dong</a></li>
+                                <li><a class="dropdown-item" href="#">Giao Thong</a></li>
+                              </ul>  
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Nổi bật</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Tiêu Điểm</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="form.html">Liên hệ</a>
+                            </li>
+                            
+                          </ul>
+                    </div>
                 </div>
-                
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Thời sự
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Chinh Tri</a></li>
-                            <li><a class="dropdown-item" href="#">Dan Sinh</a></li>
-                            <!-- <li><hr class="dropdown-divider"></li> -->
-                            <li><a class="dropdown-item" href="#">Lao Dong</a></li>
-                            <li><a class="dropdown-item" href="#">Giao Thong</a></li>
-                          </ul>  
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Nổi bật</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="#">Tiêu Điểm</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="form.html">Liên hệ</a>
-                        </li>
-                        
-                      </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+                <div class="carousel-indicators">
+                    <button aria-label="Slide 1" class="" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button" class="active" aria-current="true"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button" class=""></button>
                 </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img alt="..." class="d-block w-100" src="resource/shutterstock_1438272785-scaled-e1586289526256.jpg">
+                        <div class="carousel-caption">
+                            <h5>Tin mới nhất</h5>
+                            <p><a class="btn btn-warning mt-3" href="#">Learn More</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img alt="..." class="d-block w-100" src="resource/D16-1670914642.jpg">
+                        <div class="carousel-caption">
+                            <h5>Cuộc sống tạm bợ trong lăng vua triều Nguyễn</h5>
+                            <p>THỪA THIÊN - HUẾ31 hộ dân đang sống trong khuôn viên An Lăng, nơi chôn cất vua Dục Đức, Thành Thái và Duy Tân, hơn 40 năm qua.</p>
+                            <p><a class="btn btn-warning mt-3" href="https://vnexpress.net/cuoc-song-tam-bo-trong-lang-vua-trieu-nguyen-4547337.html">Learn More</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="..." class="d-block w-100" src="resource/parkinson-1-5998-1669716762-16-9064-1580-1670813378.jpg">
+                        <div class="carousel-caption">
+                            <h5>Sinh viên làm máy giảm run tay cho bệnh nhân Parkinson</h5>
+                            <p>Sử dụng sóng hấp thụ các lực nhiễu, nhóm sinh viên trường Đại học Sư phạm Kỹ thuật Đà Nẵng làm thiết bị giúp bệnh nhân Parkinson giảm run tay.</p>
+                            <p><a class="btn btn-warning mt-3" href="bai-viet-2-pakinson.html">Learn More</a></p>
+                        </div>
+                    </div>
+                </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
             </div>
-        </nav>
-
-        <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
-            <div class="carousel-indicators">
-                <button aria-label="Slide 1" class="" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button" class="active" aria-current="true"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button" class=""></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <img alt="..." class="d-block w-100" src="resource/shutterstock_1438272785-scaled-e1586289526256.jpg">
-                    <div class="carousel-caption">
-                        <h5>Tin mới nhất</h5>
-                        <p><a class="btn btn-warning mt-3" href="#">Learn More</a></p>
-                    </div>
-                </div>
-                <div class="carousel-item active">
-                    <img alt="..." class="d-block w-100" src="resource/D16-1670914642.jpg">
-                    <div class="carousel-caption">
-                        <h5>Cuộc sống tạm bợ trong lăng vua triều Nguyễn</h5>
-                        <p>THỪA THIÊN - HUẾ31 hộ dân đang sống trong khuôn viên An Lăng, nơi chôn cất vua Dục Đức, Thành Thái và Duy Tân, hơn 40 năm qua.</p>
-                        <p><a class="btn btn-warning mt-3" href="https://vnexpress.net/cuoc-song-tam-bo-trong-lang-vua-trieu-nguyen-4547337.html">Learn More</a></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img alt="..." class="d-block w-100" src="resource/parkinson-1-5998-1669716762-16-9064-1580-1670813378.jpg">
-                    <div class="carousel-caption">
-                        <h5>Sinh viên làm máy giảm run tay cho bệnh nhân Parkinson</h5>
-                        <p>Sử dụng sóng hấp thụ các lực nhiễu, nhóm sinh viên trường Đại học Sư phạm Kỹ thuật Đà Nẵng làm thiết bị giúp bệnh nhân Parkinson giảm run tay.</p>
-                        <p><a class="btn btn-warning mt-3" href="bai-viet-2-pakinson.html">Learn More</a></p>
-                    </div>
-                </div>
-            </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
         </div>
 
         <section class="article-preview section-padding" id="article-preview">
