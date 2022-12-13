@@ -54,6 +54,7 @@ body {
 
 .nav {
   display: block;
+  left: 50%;
   align-items: center;
 }
 .nav-right{
