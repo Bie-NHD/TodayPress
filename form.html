@@ -9,14 +9,100 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="icon" href="../resource/icon/Favicon.svg">
+        <style>
+            .card {
+                top: 10em;
+            }
+        </style>
         <title>TodayPress - Liên hệ</title>
     </head>
     <body>
-        <h3>Liên hệ với chúng tôi!</h3>
-        <form action="" >
-            <input type="submit" onclick="return validateForm()">
-        </form>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="navbar nav-left">
+                <div class="container-fluid logo">
+                    <a href="index.html" class="navbar-brand">
+                        <span>Today</span>Press
+                    </a>
+                </div>
+                
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Thời sự
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Chinh Tri</a></li>
+                            <li><a class="dropdown-item" href="#">Dan Sinh</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Lao Dong</a></li>
+                            <li><a class="dropdown-item" href="#">Giao Thong</a></li>
+                          </ul>  
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Nổi bật</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Tiêu Điểm</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="form.html">Liên hệ</a>
+                        </li>
+                        
+                      </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container card">
+            <h3 class="card-title">Liên hệ với chúng tôi!</h3>
+            <div class="container card-body">
+                <form action="" >
+                    <label for="name" class="form-label">Tên</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="name@example.com">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                    <label for="subject" class="form-label">Chủ đề</label>
+                    <textarea class="form-control" id="subject" name="subject" rows="3"></textarea>
+                    <label for="content" class="form-label">Nội dung</label>
+                    <textarea class="form-control" name="content" id="content"rows="3"></textarea>
+                    
+                    <input type="submit" onclick="return validateForm()">
+                </form>
+            </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/d92c435290.js" crossorigin="anonymous"></script>
+        <script>
+            function valEmail(){
+                var emailstr = document.getElementById("email").value;
+                let emform = new RegExp(/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/);
+                return emform.test(emailstr);
+            }
+            function valText(){
+                let name = document.getElementById("name").value;
+                let subject = document.getElementById("subject").value;
+                let content = document.getElementById("content").value;
+                let email = document.getElementById("email").value;
+    
+                return ! ((name == '' || name == null) ||
+                        (subject == '' || subject == null) ||
+                        (content == '' || content == null) ||
+                        (email == '' || email == null))
+            }
+            function validateForm(){
+                if(!valEmail()){
+                    alert("Email không chính xác.");
+                    return false
+                }
+                if (!valText()){
+                    alert("Vui lòng không bỏ trống thông tin.");
+                    return false
+                }
+                document.getElementsByClassName("cta-notif").innerHTML = "Gửi thành công!";
+                return true                
+            }
+        </script>
     </body>
 </html>

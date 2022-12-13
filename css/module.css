@@ -75,3 +75,11 @@ body {
 .nav-items .social-items li{
   display: inline-block;
 }
+.carousel-caption h5 {
+  color: white;
+  size: 200%;
+  font-weight:bold;
+}
+.carousel-caption p {
+  color: white;
+}
