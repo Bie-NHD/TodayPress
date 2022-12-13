@@ -39,6 +39,9 @@ body {
   border-bottom-left-radius: 20%;
   border-top-left-radius: 20%;
 }
+.navbar-brand{
+  font-size: larger;
+}
 .btn-navbar{
   border: none;
   background-color: white;
@@ -82,4 +85,11 @@ body {
 }
 .carousel-caption p {
   color: white;
+}
+a {
+  text-decoration: none;
+}
+.footer .fa-brands{
+  color: white;
+  size: 30px;
 }
