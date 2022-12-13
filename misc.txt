@@ -1,0 +1,87 @@
+            <!-- <div class="nav nav-right">
+                <ul class="nav-items">
+                    <li><a href="#">Thời sự</a>
+                        <ul class="nav nav-right nav-items nav-sub-items">
+                            <!-- sub nav-items -->
+                            <li><a href="#">Chinh Tri</a></li>
+                            <li><a href="#">Dan Sinh</a></li>
+                            <li><a href="#">Lao Dong</a></li>
+                            <li><a href="#">Giao Thong</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Nổi bật</a></li>
+                    <li><a href="#">Tiêu Điểm</a></li>
+                    <li><a href="#">Khác</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                </ul> -->
+
+
+
+
+
+                <div class="displayDateTime"></div>
+            
+
+            </div>
+        </header>
+        <section class="hero-section">
+            <img src="resource\shutterstock_1438272785-scaled-e1586289526256.jpg" alt="TodayPress">
+        </section>
+        <section class="article-wrapper card">
+            <div id="article-preview card-">
+                <img src="../resource/Module-thai-2819-1643599105.jpg" alt=""
+                    class="preview-image">
+                <div class="preview-title"><a href="bai-viet-1.html">Ý tưởng làm tử cung nhân tạo nuôi 30.000 em bé</a></div>
+                <div id="content">Trang bị công nghệ AI, bảo mẫu robot có thể theo dõi, chăm sóc, thậm chí đánh giá và xếp hạng phôi thai khi nuôi dưỡng trong phòng thí nghiệm.</div>
+                <p id="content-date">10-10-2020</p>
+                <div class="cta-view-article">
+                    <a href="bai-viet-1.html">Xem thêm
+                    <span class="material-icons-outlined">keyboard_double_arrow_right</span>
+                    </a>
+                </div>
+            </div>
+            <div id="article-preview">
+                <img src="../resource/Module-thai-2819-1643599105.jpg" alt=""
+                    class="preview-image">
+                <div class="preview-title"><a href="bai-viet-1.html">Ý tưởng làm tử cung nhân tạo nuôi 30.000 em bé</a></div>
+                <div id="content">Trang bị công nghệ AI, bảo mẫu robot có thể theo dõi, chăm sóc, thậm chí đánh giá và xếp hạng phôi thai khi nuôi dưỡng trong phòng thí nghiệm.</div>
+                <p id="content-date">10-10-2020</p>
+                <div class="cta-view-article">
+                    <a href="bai-viet-1.html">Xem thêm
+                    <span class="material-icons-outlined">
+                        keyboard_double_arrow_right
+                    </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h1 class="logo">
+                <a href="trang-chu.html"></a><span>Today</span>Press</a>
+            </h1>
+            <div class="left">
+                <strong>Giấy phép xuất bản số XXX/GP - BTTTT cấp ngày XX.X.XXXX</strong>
+                <br>
+                ©2022
+                <br>
+                Phát triển bởi ePi Technologies, JSC.
+            </div>
+            <div class="right">
+                <h3><a href="lien-he.html" alt="Liên hệ">LIÊN HỆ</a></h3>
+                
+                <ul class="nav-items social-items">
+                    <li><a href="#">Email
+                        <span class="material-icons-outlined">email</span>
+                    </a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script type="text/script" src="../script/displayDateTime.js"></script>
+
+        <button class="btn-navbar" onclick="">
+                    <span class="material-icons-outlined">menu</span>
+                </button>
