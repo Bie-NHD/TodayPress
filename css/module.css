@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre");
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@100");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  color: black;
+}
+
+:root {
+  --primary: #074f2b;
+  --gray:#465B55;
+}
+
+.material-icons-outlined {
+  font-size: 36px;
+  align-items: center;
+  display: block;
+}
+body {
+  background-color: white;
+}/*# sourceMappingURL=trang-chu.css.map */
+
+.logo {
+  top: 10em;
+  font-family: "Roboto", serif;
+  top: 2rem;
+  bottom: 2rem;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  cursor: hand;
+}
+.logo span {
+  font-family: "Averia Serif Libre", serif;
+  color: var(--primary);
+  padding: 0.1em;
+  display: inline-block;
+  border-bottom-left-radius: 20%;
+  border-top-left-radius: 20%;
+}
+.btn-navbar{
+  border: none;
+  background-color: white;
+  size: 2em;
+  display: none;
+}
+.displayDateTime {
+  text-align: center;
+  /* color: white; */
+  font-style: italic;
+  padding: 0.1em;
+}
+
+.nav {
+  display: block;
+  align-items: center;
+}
+.nav-right{
+  align-items: center;
+}
+.nav-right li {
+  display: inline-block;
+  align-items: center;
+}
+.nav-right .nav-sub-items li {
+  display: none;
+  visibility: hidden;
+}
+.nav-right .nav-items:hover .nav-sub-items{
+  display: block;
+  visibility: visible;
+}
+.nav-items .social-items li{
+  display: inline-block;
+}
